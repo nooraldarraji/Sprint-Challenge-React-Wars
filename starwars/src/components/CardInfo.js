@@ -10,6 +10,11 @@ export default function CardInfo(props) {
             <span>Mass: {props.mass}</span>
             <span>Height: {props.height}</span>
             <span>Gender: {props.gender}</span>
+            <span>Skin Color: {props.skin_color}</span>
+            <span>Eye Color: {props.eye_color}</span>
         </div>
     )
 }
+
+// "skin_color": "fair", 
+// "eye_color": "blue", 

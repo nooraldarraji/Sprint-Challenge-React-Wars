@@ -1,18 +1,33 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+    // display: flex;
+    // flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+`;
+
+const Span = styled.span`
+    padding: 10px;
+`;
+
 
 
 export default function CardInfo(props) {
     return (
-        <div>
-            <span>Character Name: {props.name}</span>
-            <span>Birth Year: {props.birth_year}</span>
-            <span>Hair Color: {props.hair_color}</span>
-            <span>Mass: {props.mass}</span>
-            <span>Height: {props.height}</span>
-            <span>Gender: {props.gender}</span>
-            <span>Skin Color: {props.skin_color}</span>
-            <span>Eye Color: {props.eye_color}</span>
-        </div>
+        <Wrapper>
+            <Span>Character Name: {props.name}</Span>
+            <Span>Birth Year: {props.birth_year}</Span>
+            <Span>Hair Color: {props.hair_color}</Span>
+            <Span>Mass: {props.mass}</Span>
+            <Span>Height: {props.height}</Span>
+            <Span>Gender: {props.gender}</Span>
+            <Span>Skin Color: {props.skin_color}</Span>
+            <Span>Eye Color: {props.eye_color}</Span>
+        </Wrapper>
     )
 }
 

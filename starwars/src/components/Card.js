@@ -8,7 +8,7 @@ export default function Card() {
 
     useEffect(() => {
 
-        axios.get(`https://swapi.co/api/people/`)
+        axios.get(`https://henry-mock-swapi.herokuapp.com/api`)
             .then(data => {
                 console.log(data.data.results)
                 const items = data.data.results;
